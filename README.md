@@ -96,5 +96,6 @@ wire-primary-approval/
     └── retrieve.sh
 
 ## OUTPUT
-<img width="1905" height="605" alt="image" src="https://github.com/user-attachments/assets/9e164b05-73db-4c3a-8787-581c8c9d7901" />
+<img width="1906" height="571" alt="image" src="https://github.com/user-attachments/assets/eec8997a-0b32-4f8c-8ca1-1921d21245c5" />
+
 
