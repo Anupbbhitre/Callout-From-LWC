@@ -1,0 +1,28 @@
+<template>
+    
+     <div class="slds-m-top_large slds-m-left_small slds-text-align_left" style="margin-top: -13px; margin-bottom: -13px;">
+                <lightning-button style="padding-right: 10px;" variant="brand" label="Approve" disabled={disableButton}
+                    onclick={handleApprove}>
+                </lightning-button>
+                <lightning-button style="padding-right: 20px;" variant="brand" label="Manual/Bypass" disabled={disableButton}
+                    onclick={handleManualBypassApproval}>
+                </lightning-button>
+                <h2 lwc:if={isError} class="slds-text-color_destructive" style="margin-top: -25px; margin-left: 225px; margin-bottom: 5px;"><i><b>Current user has selected the records approved in the Primary Queue.</b> </i></h2>
+    </div><br /> 
+    
+    
+    <c-expandable-section id="1" label="Wires Funded Opportunities">
+            <template lwc:if={listOfOpportunity}>
+                <div class="slds-table_col-bordered slds-table_bordered" style="height:300px;">
+                    <lightning-datatable data-table-id="firstTable" key-field="id" data={listOfOpportunity}
+                       columns={FunndedOppColumns} show-row-number-column>
+                    </lightning-datatable>
+                </div>
+            </template> 
+            <template lwc:else> 
+                <div class="slds-text-align_center">
+                    <b>No Records</b>
+                </div>
+            </template>
+        </c-expandable-section>
+</template>
