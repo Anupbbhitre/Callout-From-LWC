@@ -45,4 +45,56 @@ The project uses a layered architecture:
 ---
 
 ## 📂 Project Structure
+wire-primary-approval/
+│
+├── README.md
+├── .gitignore
+├── sfdx-project.json
+├── package.json
+│
+├── force-app/
+│   └── main/
+│       └── default/
+│
+│           ├── classes/
+│           │   ├── wirePrimaryApprovalController.cls
+│           │   ├── wirePrimaryApprovalController.cls-meta.xml
+│           │   │
+│           │   ├── WireBatchCallout.cls                // Batch Apex
+│           │   ├── WireBatchCallout.cls-meta.xml
+│           │   │
+│           │   ├── WireIntegrationService.cls          // Callout logic
+│           │   ├── WireIntegrationService.cls-meta.xml
+│           │   │
+│           │   ├── WireApprovalService.cls             // Approval logic
+│           │   ├── WireApprovalService.cls-meta.xml
+│           │   │
+│           │   ├── WireUtility.cls                     // Helper methods
+│           │   └── WireUtility.cls-meta.xml
+│           │
+│           ├── lwc/
+│           │   ├── wirePrimaryApprovalDemo/
+│           │   │   ├── wirePrimaryApprovalDemo.html
+│           │   │   ├── wirePrimaryApprovalDemo.js
+│           │   │   ├── wirePrimaryApprovalDemo.js-meta.xml
+│           │   │   └── wirePrimaryApprovalDemo.css
+│           │   │
+│           │   └── expandableSection/
+│           │       ├── expandableSection.html
+│           │       ├── expandableSection.js
+│           │       └── expandableSection.js-meta.xml
+│           │
+│           ├── objects/              // If custom objects exist
+│           ├── layouts/
+│           ├── permissionsets/
+│           ├── customMetadata/
+│           ├── namedCredentials/
+│           └── labels/
+│
+└── scripts/
+    ├── deploy.sh
+    └── retrieve.sh
+
+## OUTPUT
+<img width="1905" height="605" alt="image" src="https://github.com/user-attachments/assets/9e164b05-73db-4c3a-8787-581c8c9d7901" />
 
