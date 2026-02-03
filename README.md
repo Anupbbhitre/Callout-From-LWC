@@ -1,18 +1,48 @@
-# Wire Primary Approval
+# Wire Primary Approval – Salesforce Project
 
-Salesforce project to manage LCF wire funded opportunities.
+## 📖 Overview
+Wire Primary Approval is a Salesforce solution designed to manage funded Opportunities that require Primary Queue approval before wire processing.
 
-## Features
-- Approve Opportunities
-- Manual / Bypass Approval
-- Batch Apex Callout Integration
-- Expandable LWC UI
+The application provides:
+- Lightning Web Component (LWC) UI for reviewing funded Opportunities
+- Approve and Manual/Bypass actions
+- Batch Apex callout processing
+- Integration-ready architecture for external wire systems
 
-## Tech Stack
-- LWC
-- Apex
-- Batch Apex
-- Named Credentials
+This project follows a scalable Apex + LWC layered design suitable for enterprise Salesforce implementations.
 
-## Deployment
-sfdx force:source:deploy -p force-app
+---
+
+## 🚀 Features
+
+✅ Display LCF Wires Funded Opportunities  
+✅ Approve records from Primary Queue  
+✅ Manual / Bypass approval option  
+✅ Batch Apex Callout Integration  
+✅ Expandable reusable LWC section  
+✅ Error handling with Toast notifications  
+
+---
+
+## 🏗️ Architecture
+
+The project uses a layered architecture:
+
+- **LWC (UI Layer)**
+  - `wirePrimaryApprovalDemo`
+  - `expandableSection`
+
+- **Controller Layer**
+  - `wirePrimaryApprovalController`
+
+- **Service Layer**
+  - Approval logic
+  - Integration processing
+
+- **Batch Layer**
+  - External API callouts
+
+---
+
+## 📂 Project Structure
+
